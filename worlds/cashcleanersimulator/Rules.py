@@ -28,10 +28,20 @@ def has_opened_relax_area(player) -> Callable:
     return lambda state: state.has("Unlock relax area" + " completed", player)
 
 def has_workbench_access(player) -> Callable:
-    return lambda state: has_done_quest(player, "Main Quest Side: Hot Dry")(state)
+    return lambda state: (
+        has_done_quest(
+            player, "Main Quest Side: Hot Dry"
+        )(state)
+    )
 
 def has_access(player, item, rep_need) -> Callable:
-    return lambda state: reputation_at_least(player, rep_need[state.count(item, player)])(state)
+    return lambda state: (
+        reputation_at_least(
+            player, rep_need[
+                min(state.count(item, player), len(rep_need) - 1)
+            ]
+        )(state)
+    )
 
 def has_washer(player) -> Callable:
     return lambda state: (
@@ -104,6 +114,12 @@ def has_counter(player) -> Callable:
 def has_euro_counter(player) -> Callable:
     return lambda state: (
         has_access(player, "Reduced Euro Money counter tier 2 requirement", BASE_REP_NEED)(state) or
+        has_access(player, "Reduced Money counter tier 3 requirement", HIGH_REP_NEED)(state)
+	)
+
+def has_yen_counter(player) -> Callable:
+    return lambda state: (
+        has_access(player, "Reduced Yen Money counter tier 2 requirement", BASE_REP_NEED)(state) or
         has_access(player, "Reduced Money counter tier 3 requirement", HIGH_REP_NEED)(state)
 	)
 

@@ -47,7 +47,7 @@ class CcsWorld(World):
       - Flesh out items and item behaviours
       - Add options and presets if desired
     """
-    game: str = "Cash Cleaner Simulator"
+    game: str = "Cash Cleaner Simulator" # pyright: ignore[reportIncompatibleVariableOverride]
     web = CcsWebWorld()
 
     options_dataclass = CashCleanerSimulatorOptions
