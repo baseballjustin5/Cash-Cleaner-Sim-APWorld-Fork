@@ -131,7 +131,7 @@ class CcsWorld(World):
                 crypto_id = _items.item_name_to_id[chosen_item]
                 itempool.append(
                     CcsItem(
-                        "Cryptocurrency",
+                        chosen_item,
                         crypto_class,
                         crypto_id,
                         self.player,

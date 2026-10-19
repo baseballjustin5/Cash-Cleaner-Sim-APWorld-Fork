@@ -215,6 +215,26 @@ location_name_to_rule = {
     "SideQuest 28":                                 lambda player: lambda state: reputation_at_least(player, 15)(state) and has_done_quest(player, "SideQuest 27")(state) and has_counter(player)(state),
     "SideQuest 29":                                 lambda player: lambda state: reputation_at_least(player, 15)(state) and has_done_quest(player, "SideQuest 28")(state) and has_counter(player)(state),
     "SideQuest 30":                                 lambda player: lambda state: reputation_at_least(player, 15)(state) and has_done_quest(player, "SideQuest 29")(state) and has_counter(player)(state),
+    "SideQuest 31":                                 lambda player: lambda state: reputation_at_least(player, 20)(state) and has_done_quest(player, "SideQuest 30")(state) and has_counter(player)(state),
+    "SideQuest 32":                                 lambda player: lambda state: reputation_at_least(player, 20)(state) and has_done_quest(player, "SideQuest 31")(state) and has_counter(player)(state),
+    "SideQuest 33":                                 lambda player: lambda state: reputation_at_least(player, 20)(state) and has_done_quest(player, "SideQuest 32")(state) and has_counter(player)(state),
+    "SideQuest 34":                                 lambda player: lambda state: reputation_at_least(player, 20)(state) and has_done_quest(player, "SideQuest 33")(state) and has_counter(player)(state),
+    "SideQuest 35":                                 lambda player: lambda state: reputation_at_least(player, 20)(state) and has_done_quest(player, "SideQuest 34")(state) and has_counter(player)(state),
+    "SideQuest 36":                                 lambda player: lambda state: reputation_at_least(player, 25)(state) and has_done_quest(player, "SideQuest 35")(state) and has_counter(player)(state),
+    "SideQuest 37":                                 lambda player: lambda state: reputation_at_least(player, 25)(state) and has_done_quest(player, "SideQuest 36")(state) and has_counter(player)(state),
+    "SideQuest 38":                                 lambda player: lambda state: reputation_at_least(player, 25)(state) and has_done_quest(player, "SideQuest 37")(state) and has_counter(player)(state),
+    "SideQuest 39":                                 lambda player: lambda state: reputation_at_least(player, 25)(state) and has_done_quest(player, "SideQuest 38")(state) and has_counter(player)(state),
+    "SideQuest 40":                                 lambda player: lambda state: reputation_at_least(player, 25)(state) and has_done_quest(player, "SideQuest 39")(state) and has_counter(player)(state),
+    "SideQuest 41":                                 lambda player: lambda state: reputation_at_least(player, 30)(state) and has_done_quest(player, "SideQuest 40")(state) and has_counter(player)(state),
+    "SideQuest 42":                                 lambda player: lambda state: reputation_at_least(player, 30)(state) and has_done_quest(player, "SideQuest 41")(state) and has_counter(player)(state),
+    "SideQuest 43":                                 lambda player: lambda state: reputation_at_least(player, 30)(state) and has_done_quest(player, "SideQuest 42")(state) and has_counter(player)(state),
+    "SideQuest 44":                                 lambda player: lambda state: reputation_at_least(player, 30)(state) and has_done_quest(player, "SideQuest 43")(state) and has_counter(player)(state),
+    "SideQuest 45":                                 lambda player: lambda state: reputation_at_least(player, 30)(state) and has_done_quest(player, "SideQuest 44")(state) and has_counter(player)(state),
+    "SideQuest 46":                                 lambda player: lambda state: reputation_at_least(player, 34)(state) and has_done_quest(player, "SideQuest 45")(state) and has_counter(player)(state),
+    "SideQuest 47":                                 lambda player: lambda state: reputation_at_least(player, 34)(state) and has_done_quest(player, "SideQuest 46")(state) and has_counter(player)(state),
+    "SideQuest 48":                                 lambda player: lambda state: reputation_at_least(player, 34)(state) and has_done_quest(player, "SideQuest 47")(state) and has_counter(player)(state),
+    "SideQuest 49":                                 lambda player: lambda state: reputation_at_least(player, 34)(state) and has_done_quest(player, "SideQuest 48")(state) and has_counter(player)(state),
+    "SideQuest 50":                                 lambda player: lambda state: reputation_at_least(player, 34)(state) and has_done_quest(player, "SideQuest 49")(state) and has_counter(player)(state),
     # Side quests bonus
     "Quest Bonus: Exact money value":               lambda player: lambda state: state.has("Main Quest Tutorial: Conveyor completed", player),
     "Quest Bonus: More money value":                lambda player: lambda state: state.has("Main Quest Tutorial: Conveyor completed", player),
@@ -272,8 +292,7 @@ location_name_to_rule = {
     "Side quest Difficulty 6":                      lambda player: lambda state: reputation_at_least(player, 22)(state) and has_counter(player)(state),
     "Side quest Difficulty 7":                      lambda player: lambda state: reputation_at_least(player, 24)(state) and has_counter(player)(state),
     "Side quest Difficulty 8":                      lambda player: lambda state: reputation_at_least(player, 34)(state) and has_counter(player)(state),
-    "Side quest Difficulty 9":                      lambda player: lambda state: reputation_at_least(player, 34)(state) and has_counter(player)(state),
-                                   
+    "Side quest Difficulty 9":                      lambda player: lambda state: reputation_at_least(player, 34)(state) and has_counter(player)(state),                     
 }
 
 
