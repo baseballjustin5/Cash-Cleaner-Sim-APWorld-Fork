@@ -25,7 +25,7 @@ location_name_to_id: Dict[str, int] = {
     "Main Quest Side: Hot Dry":                      0xCE000D,
     "Main Quest Side: Clean Cut":                    0xCE000E,
     "Main Quest Side: Two Cases":                    0xCE000F,
-    "Main Quest Side: From Chaos Of Cash":           0xCE0010,
+    "Main Quest Side: From Chaos To Cash":           0xCE0010,
     "Main Quest Side: Silent Deal":                  0xCE0011,
     "Main Quest Side: Fake Fluff":                   0xCE0012,
     "Main Quest Side: No Stains":                    0xCE0013,
